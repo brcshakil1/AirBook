@@ -21,9 +21,9 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="flex justify-between items-center bg-white fixed w-[98%] left-1/2 -translate-x-1/2 py-5 px-10 bg-opacity-70">
+    <div className=" flex justify-between items-center bg-white z-20 fixed w-full md:w-[98%] left-1/2 -translate-x-1/2 py-5 px-10 bg-opacity-70">
       {/* logo */}
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center w-full">
         <div className="flex items-center gap-2">
           <img src={logoPart1} alt="" />
           <img src={logoPart2} alt="" />
@@ -32,11 +32,11 @@ const Navbar = () => {
       </div>
 
       {/* links */}
-      <ul className="flex items-center gap-5">{navLinks}</ul>
+      <ul className="md:flex hidden items-center gap-5 ">{navLinks}</ul>
 
       {/* signIn signUp btn */}
       <button
-        className="bg-primary w-32 text-xl font-medium py-2 rounded-[10px] text-white
+        className="hidden md:block bg-primary w-32 text-xl font-medium py-2 rounded-[10px] text-white
           "
       >
         Sign in

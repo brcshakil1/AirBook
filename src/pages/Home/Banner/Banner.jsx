@@ -5,15 +5,15 @@ import { GoSearch } from "react-icons/go";
 const Banner = () => {
   return (
     <div
-      className="md:min-h-[80vh] bg-no-repeat bg-cover "
+      className="min-h-[400px] md:min-h-[80vh] bg-no-repeat bg-cover border border-red-600"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <ComContainer>
-        <div className="pt-28">
-          <h1 className="text-[40px] text-white">
+        <div className="pt-36 relative">
+          <h1 className="text-3xl md:text-[40px] text-white">
             Welcome to <span className="text-primary font-bold">AirBook</span>
           </h1>
-          <div className="bg-white p-12 rounded-xl ">
+          <div className="bg-white p-12 rounded-xl absolute md:static shadow-xl mt-5 md:mt-8">
             {/* trip */}
             <div className="flex justify-between items-center gap-5 flex-col md:flex-row">
               {/* radio */}
@@ -63,7 +63,7 @@ const Banner = () => {
             </div>
 
             {/*  */}
-            <div className="flex justify-between gap-5 flex-wrap mt-5">
+            <div className="flex justify-between gap-5 flex-col md:flex-row flex-wrap mt-5">
               {/* col-1 */}
               <div className="flex items-center border rounded-lg">
                 <h3 className="text-sm font-semibold border-r px-3">DAC</h3>
@@ -96,7 +96,7 @@ const Banner = () => {
                   <p className="text-[12px]">Hazrat Shahjalal Internatio</p>
                 </div>
               </div>
-              <button className="bg-accent px-5 md:py-0 py-4  rounded-lg">
+              <button className="bg-accent  rounded-lg w-16 py-4 grid place-items-center">
                 <GoSearch className="text-2xl text-white" />
               </button>
             </div>
